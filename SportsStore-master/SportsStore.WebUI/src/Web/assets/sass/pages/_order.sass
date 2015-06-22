@@ -1,0 +1,92 @@
+// @author Sevil YILMAZ
+@import bourbon
+
+.order-summary
+  .box-header-title
+    float: left
+  .gift-cert-title
+    font-size: 16px
+    font-size: 1rem
+.order-info
+  margin-bottom: 1em
+  &.last
+    margin-bottom: 0
+
+.order-info-detail
+  font-size: 12px
+  font-size: .75em
+  margin: 0
+
+.order-info-title
+  margin: 0 0 .3em
+  font-size: 14px
+  font-size: .875rem
+  color: $default-color
+
+.order-payment-info + .order-payment-info
+  margin-top: 10px
+
+.order-info-col
+  float: left
+  max-width: 30%
+  margin-right: 1em
+
+.used-point-container
+  margin: .7em 0 0
+  padding: .7em 0 0
+  border-top: $border
+  font-size: .7em
+  font-weight: 700
+
+.order-item-list
+  @extend %list-reset
+  font-size: 14px
+  font-size: .875rem
+  .list-item
+    position: relative
+    margin: 0 0 .75rem
+    padding: 0 0 .75rem
+    border-bottom: 1px solid $grey-1
+    &:last-child
+      margin: 0
+      padding: 0
+      border-bottom: 0
+  .item-detail
+    padding-right: 95px
+  .product-name
+    margin: 0 0 .3em
+    font-weight: 700
+  .product-details
+    color: $secondary-color
+    font-size: 12px
+    font-size: .75rem
+  .item-price
+    +position(absolute, 0px 0px null null)
+    width: 90px
+    color: $default-highlight-color
+    font-weight: 700
+    text-align: right
+    font-size: 16px
+    font-size: 1rem
+
+.eula-container
+  height: 110px
+  overflow: auto
+  color: $secondary-color
+  font-size: 12pt
+  font-weight: 700
+  table
+    color: $secondary-color !important
+.eula-alpha-list
+  list-style: lower-alpha
+  
+.confirmation-check
+  font-size: em(12)
+  .custom-input-label
+    display: block
+    margin: 0 0 14px
+
+.order-info-msg
+  margin: 10px 0 0
+  font-size: 14px
+  text-align: left

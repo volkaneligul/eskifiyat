@@ -1,0 +1,174 @@
+h1, h2, h3, h4, h5, h6
+  color: #333
+  margin: 0
+  margin-bottom: 15px
+  font-weight: normal
+
+h1
+  font-size: 28px
+  line-height: 32px
+  font-family: Times,TimesNewRoman,"Times New Roman",Baskerville,Georgia,serif
+  font-style: normal
+  font-weight: normal
+
+h2
+  font-size: 18px
+  line-height: 24px
+  font-family: Times,TimesNewRoman,"Times New Roman",Baskerville,Georgia,serif
+
+h3
+  font-size: 13px
+  line-height: 17px
+  font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif
+  font-weight: bold
+
+p, .wysiwyg div 
+  line-height: 22px
+  margin-bottom: 20px
+
+#main
+  #page-content
+    border-top: 1px solid #e8e8e8
+    overflow: hidden
+
+#breadcrumb
+  padding: 10px 0 30px 0
+  a
+    border-bottom: none
+    color: #333333
+    font-size: 12px
+    &:hover
+      border-bottom: none
+      color: #999999
+    &.active
+      color: #999999
+
+section#images
+  position: relative
+
+section#gallery
+  a
+    display: block
+    float: left
+    border-bottom: none
+    width: 92px
+    margin: 5px 10px 0 0
+    &.first
+      clear: left
+    img
+      width: 100%  
+
+section#buy
+  h2
+    font-size: 28px
+    margin-bottom: 20px
+  form
+    margin-bottom: 10px
+    label
+      margin-bottom: 5px
+    #product-variants
+      padding: 10px 0
+      border-top: 1px solid #e8e8e8
+      border-bottom: 1px solid #e8e8e8
+      margin-bottom: 20px
+      &.hidden
+        border-top: none
+        padding: 0
+      .selector-wrapper
+        min-height: 40px
+
+section#product-info
+  border-top: 1px solid #e8e8e8
+  margin-top: 20px
+  padding-bottom: 10px
+  ul
+    &.tabs
+      display: block
+      border-bottom: 1px solid #e8e8e8
+      margin: 0
+      padding: 0
+      list-style: none
+      margin-bottom: 20px
+      li
+        float: left
+        margin: 0
+        padding: 12px 0 10px 10px
+        line-height: 18px;
+        &.first
+          padding-right: 12px
+          border-right: 1px solid #e8e8e8
+          padding-left: 0
+        a
+          display: block
+          border-bottom: none
+          color: #999999
+          &.active
+            border-bottom: 1px solid #ffffff
+            color: #333333
+
+section#related-products
+  border-top: 1px solid #e8e8e8
+  padding-top: 15px
+  h2
+    margin-bottom: 30px
+
+    
+section.product-grid
+  div.columns
+    margin-bottom: 20px !important
+    text-align: center
+    min-height: 270px
+    h3
+      font-size: 12px
+      line-height: 18px
+      font-weight: normal
+      letter-spacing: 0
+      margin-bottom: 0
+    h4
+      font-size: 16px
+      line-height: 22px
+      font-family: Times, TimesNewRoman, "Times New Roman", Baskerville, Georgia, serif
+      font-style: italic
+      font-weight: normal
+      letter-spacing: 0
+      color: #333333
+      margin-bottom: 0
+    a
+      display: block
+      position: relative
+      cursor: pointer
+      border-bottom: 0
+      padding-bottom: 0
+      text-decoration: none
+      &:hover
+        h3
+          color: #999999
+      .sold-out
+        color: #fff
+        background-color: rgba(0,0,0,0.5)
+        display: block
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+        text-align: center
+        width: 100%
+        height: 45px
+        min-height: 45px !important
+        line-height: 45px
+        position: absolute
+        z-index: 3
+        bottom: 20%
+        left: 0
+      img
+        margin-bottom: 10px  
+    a#product-2
+      webkit-animation-delay: 0.2s
+      -moz-animation-delay: 0.2s
+      -o-animation-delay: 0.2s
+      animation-delay: 0.2s
+      -webkit-animation-duration: 0.5s
+      -moz-animation-duration: 0.5s
+      -o-animation-duration: 0.5s
+      animation-duration: 0.5s
+  div.columns.columns
+    overflow: hidden

@@ -1,0 +1,90 @@
+#sidebar
+  a#toggle-menu
+    display: none
+    text-transform: uppercase
+    text-align: center
+    border-top: 1px solid #e8e8e8
+    padding: 10px 0
+    span
+      background: url(#{$images-base}/#{$sprite-icon}) -32px -103px no-repeat
+      display: inline-block
+      padding-left: 20px
+  nav
+    .accordion-content
+      margin-bottom: 20px
+      a
+        padding: 0
+        font-weight: normal
+        margin: 0
+    a
+      border-bottom: none
+      display: block
+      &:hover
+        opacity: 0.8
+    li
+      border-top: 1px solid #e8e8e8
+      font-weight: bold
+      margin: 0
+      line-height: 18px
+      a
+        padding-top: 10px
+        padding-bottom: 10px
+        padding-right: 20px
+        position: relative
+        text-decoration: none
+        span
+          color: #999999
+          position: absolute
+          right: 0
+          top: 10px
+          font-weight: normal
+#main-menu
+  margin: 0
+  padding: 0
+#social
+  padding: 20px 0
+  a
+    border-bottom: none
+    width: 50px
+    height: 50px
+    background: #333333
+    border-radius: 50%
+    display: inline-block !important
+    width: 25px
+    height: 25px
+    margin-right: 4px
+  a.facebook
+    &:after
+      background: url(#{$images-base}/#{$sprite-icon}) 0px -52px no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+  a.twitter
+    &:after
+      background: url(#{$images-base}/#{$sprite-icon}) -27px -52px no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+  a.instagram
+    &:after
+      background: url(#{$images-base}/#{$sprite-icon}) -82px -52px no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+  a.pinterest
+    &:after
+      background: url(#{$images-base}/#{$sprite-icon}) -109px -53px no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+  a.rss
+    &:after
+      background: url(#{$images-base}/#{$sprite-icon}) -216px -54px no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""    

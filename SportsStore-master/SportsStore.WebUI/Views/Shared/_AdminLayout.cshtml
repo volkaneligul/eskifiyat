@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/admin-style")
+    @Scripts.Render("~/bundles/admin-scripts")
+</head>
+<body>
+    <div>
+        @if (TempData["message"] != null)
+        {
+            <div class="message">@TempData["message"]</div>
+        }
+        @RenderBody()
+    </div>
+</body>
+
+</html>

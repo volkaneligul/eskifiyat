@@ -1,0 +1,230 @@
+@viewport
+  zoom: 1.0
+  width: extend-to-zoom
+
+@-ms-viewport
+  width: extend-to-zoom
+  zoom: 1.0
+
+body
+  background-color: #ffffff
+  color: #333333
+  background: #fff
+  font: 12px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+
+#cart-animation
+  background: none repeat scroll 0 0 #333333 !important
+  border: 1px solid #FFFFFF
+  border-radius: 50% 50% 50% 50%
+  color: #FFFFFF !important
+  display: none
+  font-size: 16px
+  font-weight: bold
+  height: 35px
+  line-height: 35px
+  position: absolute
+  text-align: center
+  width: 35px
+  z-index: 200
+
+#drawer
+  display: none
+  width: 100%
+  background: #333333
+  color: #ffffff
+  form
+    margin: 0
+    padding: 0
+    a
+      border-bottom: none
+    .actions
+      padding: 0 0 10px 0
+      text-align: right
+      input
+        padding-top: 20px
+        border: 1px solid #ffffff !important
+        color: #ffffff
+        background: transparent !important
+        padding: 10px 20px !important
+        font-size: 12px
+    .remove
+      padding-top: 5px
+      a
+        color: #e8e8e8 
+    .total
+      padding-top: 5px
+      font-size: 16px
+      font-family: Times,TimesNewRoman,"Times New Roman",Baskerville,Georgia,serif
+      font-style: normal
+      font-weight: normal  
+    .quantity
+      text-align: center
+      input
+        width: 30px !important
+        text-align: center  
+    .price
+      font-size: 16px
+      font-family: Times,TimesNewRoman,"Times New Roman",Baskerville,Georgia,serif
+      font-style: normal
+      font-weight: normal
+      padding-top: 5px
+    .description 
+      img
+        float: left
+        width: 100px
+        padding-top: 5px
+      .info 
+        float: left
+        padding: 5px 0 0 40px
+        width: 330px
+        min-height: 120px
+        p
+          margin-bottom: 20px
+          &.mobile
+            font-family: Times,TimesNewRoman,"Times New Roman",Baskerville,Georgia,serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+        h4
+          font-size: 12px
+          letter-spacing: 0
+          line-height: 18px
+          font-weight: normal
+          padding-bottom: 10px
+          margin-bottom: 10px
+          border-bottom: 1px solid #666
+        h3
+          line-height: 18px
+          margin-bottom: 0
+          a
+            color: #ffffff
+    .row
+      border-bottom: 1px solid #666
+      margin-bottom: 20px
+      &.first
+        padding-top: 20px
+
+.container
+  position: relative
+  width: 960px
+  margin: 0 auto
+  padding: 0
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  .column, .columns 
+    float: left
+    display: inline
+    margin: 0 10px 0 10px
+  .one.column, .one.columns
+    width: 40px
+  .two.columns
+    width: 100px  
+  .three.columns
+    width: 160px
+  .four.columns
+    width: 220px  
+  .seven.columns
+    width: 400px
+  .eight.columns
+    width: 460px  
+  .offset-by-one
+    padding-left: 60px
+  .five.columns
+    width: 280px
+  .six.columns
+    width: 340px  
+  .twelve.columns
+    width: 700px    
+
+.clear
+  clear: both
+  display: block
+  overflow: hidden
+  visibility: hidden
+  width: 0
+  height: 0
+
+a
+  color: #333333
+  text-decoration: underline
+  padding-bottom: 1px
+  outline: 0
+  &:hover
+    color: #999999
+    text-decoration: none
+    border-bottom: none
+  &.selected
+    color: #999999
+
+img, embed, object, video, iframe
+  max-width: 100%
+
+.row, .clearfix
+  zoom: 1
+  &:before, &:after
+    content: '\0020'
+    display: block
+    overflow: hidden
+    visibility: hidden
+    width: 0
+    height: 0
+  &:after
+    clear: both  
+
+.mobile
+  display: none
+
+.logo-tagline.table
+  margin-top: 20px
+
+.table
+  display: table
+  width: 100%
+  table-layout: fixed
+.table-cell
+  display: table-cell
+  vertical-align: middle  
+
+.group
+  +clearfix
+
+.content-holder
+  padding: $gap
+  min-height: 20px
+
+.page
+  +position(absolute, 0px null null 0px)
+  width: 100%
+  min-height: 100%
+  overflow: visible
+  overflow-x: hidden
+  border: 0
+  outline: none
+  background-color: $bg-content
+
+.box
+  margin: 0 0 10px
+  background-color: #fff
+  border: 1px solid $grey-1
+  border-radius: 3px
+  &.banner
+    line-height: 0
+
+.box-header
+  padding: $gap
+  border-bottom: 1px solid $grey-1
+
+.box-content
+  padding: $gap
+
+.box-section
+  position: relative
+  padding: $gap
+  border-top: 1px solid $grey-1
+  &.inner-section
+    margin: 0 -1em

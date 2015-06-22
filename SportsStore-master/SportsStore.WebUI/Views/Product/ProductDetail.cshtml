@@ -1,0 +1,150 @@
+﻿@model SportsStore.Domain.Entities.Product
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="page-content">
+    <!--START BREADCRUMB-->
+    <div id="breadcrumb" class="desktop">
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/" itemprop="url">
+                <span itemprop="title">Home</span>
+            </a>
+        </span>
+        &mdash;
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/collections/all-products" itemprop="url"><span itemprop="title">All Products</span></a> &mdash; <a href="/products/blue-ripped-jeans" class="active">@Model.Name</a>
+        </span>
+    </div>
+    <!--END BREADCRUMB-->
+    <!--START PRODUCT-->
+    <div itemscope itemtype="http://schema.org/Product" class="twelve columns alpha omega">
+        <meta itemprop="url" content="http://simpletheme.myshopify.com/products/blue-ripped-jeans" />
+        <meta itemprop="image" content="/src/Web/assets/images/product/6147041400_2_2_1_grande.jpg?v=1373477594" />
+        <!-- START PRODUCT IMAGES-->
+        <section id="images" class="seven columns alpha">
+            <!-- START ZOOM IMAGE-->
+            <img id="feature-image" src="@Url.Action("GetImage", "Product", new { Model.ProductID })" alt="@Model.Name" />
+            <!-- END ZOOM IMAGE-->
+            <!-- START GALLERY-->
+            <section id="gallery">
+                <a href="//cdn.shopify.com/s/files/1/0037/5472/products/4043050630_2_2_1_1024x1024.jpg?v=1373479045" class="first">
+                    <img src="//cdn.shopify.com/s/files/1/0037/5472/products/4043050630_2_2_1_medium.jpg?v=1373479045" alt="Magenta skirt">
+                </a>
+                <a href="//cdn.shopify.com/s/files/1/0037/5472/products/4043050630_2_1_1_1024x1024.jpg?v=1373479045" class="">
+                    <img src="//cdn.shopify.com/s/files/1/0037/5472/products/4043050630_2_1_1_medium.jpg?v=1373479045" alt="Magenta skirt">
+                </a>
+            </section>
+            <!-- END GALLERY-->
+        </section>
+        <!-- END PRODUCT IMAGES-->
+        <!--START BUY-->
+        <section id="buy" class="five columns omega">
+                @using (Html.BeginForm("AddToCart", "Cart"))
+                {
+            <!--<form action="/cart/add" method="post" id="product-form" class="quickAdd" enctype="multipart/form-data">-->
+                <h1 itemprop="name">@Model.Name</h1>
+                <h2 id="product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="CAD" />
+                    <link itemprop="availability" href="http://schema.org/InStock" />
+                    <span class="product-price" itemprop="price">@Model.Price.ToString("c")</span>
+                </h2>
+                <div id="product-variants" class="">
+                    <select id="product-select" name="id" class="hidden">
+
+                        <option selected="selected" value="335387650">Large / Blue - $99.00</option>
+
+                        <option value="336787156">Medium / Green - $99.00</option>
+
+                        <option value="654886997">Medium / Black - $99.00</option>
+
+                    </select>
+                </div>
+                
+                
+                @Html.HiddenFor(x => x.ProductID)
+                @Html.Hidden("returnUrl", Request.Url.PathAndQuery);
+                <input type="submit" value="Add to Cart" id="add" class="btn add-to-cart" />
+                }
+
+                
+            <!--</form>-->
+            @*<div class="social-sharing " data-permalink="http://simpletheme.myshopify.com/products/blue-ripped-jeans">
+                    <a target="_blank" href="//www.facebook.com/sharer.php?u=http://simpletheme.myshopify.com/products/blue-ripped-jeans" class="share-facebook">
+                        <span class="icon icon-facebook"></span>
+                        <span class="share-title">Share</span>
+                        <span class="share-count">0</span>
+                    </a>
+                    <a target="_blank" href="//twitter.com/share?url=http://simpletheme.myshopify.com/products/blue-ripped-jeans&amp;text=@Model.Name" class="share-twitter">
+                        <span class="icon icon-twitter"></span>
+                        <span class="share-title">Tweet</span>
+                        <span class="share-count">0</span>
+                    </a>
+                    <a target="_blank" href="//pinterest.com/pin/create/button/?url=http://simpletheme.myshopify.com/products/blue-ripped-jeans&amp;media=//cdn.shopify.com/s/files/1/0037/5472/products/6147041400_2_2_1_1024x1024.jpg?v=1373477594&amp;description=@Model.Name" class="share-pinterest">
+                        <span class="icon icon-pinterest"></span>
+                        <span class="share-title">Pin it</span>
+                        <span class="share-count">0</span>
+                    </a>
+                    <a target="_blank" href="//plus.google.com/share?url=http://simpletheme.myshopify.com/products/blue-ripped-jeans" class="share-google">
+                         Cannot get Google+ share count with JS yet
+                        <span class="icon icon-google"></span>
+                        <span class="share-count">+1</span>
+                    </a>
+                </div>*@
+        </section>
+        <!--END BUY-->
+        <br class="clear">
+        <!--START PRODUCT INFO-->
+        <section id="product-info">
+            <ul class='tabs clearfix'>
+                <li class="first"><a href='#tab1' class="active">Product Description</a></li>
+                <li><a href='#tab2'>Shipping Information</a></li>
+            </ul>
+            <div id='tab1'>
+                <div class="wysiwyg" itemprop="description">
+                    <p>@Model.Description</p>&#13;
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <div id='tab2' style="display: none">
+                <div class="wysiwyg">
+                    <p>You can embed any other page on your store here. It's perfect for things like displaying shipping rates.&nbsp;</p>
+                </div>
+            </div>
+        </section>
+        <!--END PRODUCT INFO-->
+        <!--START PRODUCT GRID-->
+        <section id="related-products" class="product-grid twelve columns alpha omega">
+            <h2>You might also like...</h2>
+            <div class="four columns alpha">
+                <a href="/collections/all-products/products/off-white-trench-style-jacket" id="product-2">
+                    <div class="sold-out">Sold Out</div>
+                    <img src="/src/Web/assets/images/product/5475447731_2_1_1_large.jpg?v=1373476750" alt="Off white trench style jacket" class="product" />
+                    <h3>Off white trench style jacket</h3>
+                    <h4>$199.00 </h4>
+                </a>
+            </div>
+            <div class="four columns ">
+                <a href="/collections/all-products/products/contrast-jacket" id="product-3">
+                    <img src="/src/Web/assets/images/product/0706412401_2_1_1_large.jpg?v=1373476417" alt="Contrast jacket" class="product" />
+                    <h3>Contrast jacket</h3>
+                    <h4>$199.00 </h4>
+                </a>
+            </div>
+            <div class="four columns omega">
+                <a href="/collections/all-products/products/cream-white-pants" id="product-4">
+                    <img src="/src/Web/assets/images/product/6917416805_2_1_1_large.jpg?v=1373477293" alt="Cream white pants" class="product" />
+                    <h3>Cream white pants</h3>
+                    <h4>$79.00 </h4>
+                </a>
+            </div>
+            <br class="clear">
+        </section>
+        <!--END PRODUCT GRID-->
+        <br class="clear">
+    </div>
+    <!--END PRODUCT-->
+    <br class="clear">
+</div>
+

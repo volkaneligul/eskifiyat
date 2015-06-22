@@ -1,0 +1,49 @@
+// @author Volkan Eligül
+
+/* ----------------- Helpers ----------------- */
+%box-reset
+  margin: 0
+  padding: 0
+
+%list-reset
+  @extend %box-reset
+  list-style: none
+
+%ib
+  display: inline-block
+  vertical-align: middle
+  *zoom: 1
+  *display: inline
+  *vertical-align: auto
+
+%ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+%hidden
+  display: none !important
+  visibility: hidden
+
+%hide-text
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+%invisible
+  visibility: hidden
+
+/* ----------------- Helpers ----------------- */
+
+/* Layout */
+%container
+  margin-right: auto
+  margin-left: auto
+  width: $width
+
+/* ----------------- Transitions ----------------- */
+%transition
+  +transition(all 0.5s ease)
+
+%no-transition
+  +transition(none)

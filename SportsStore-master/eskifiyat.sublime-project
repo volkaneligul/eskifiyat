@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"path": "SportsStore.WebUI/src/Web"
+		},
+		{
+			"path": "SportsStore.WebUI/src/tests"
+		}
+	]
+}

@@ -1,0 +1,71 @@
+// @author Volkan Eligül
+
+// Variables
+// Units
+$gap: 10px;
+$width: 1000px;
+
+
+// Colors
+$default-color: #484848;
+$secondary-color: #727272;
+$default-link-color: #f28b00;
+$secondary-link-color: #727272;
+$secondary-link-hover-color: #f8a24e;
+$default-title-color: #f28b00;
+$default-highlight-color: #f28b00;
+
+$default-border-color: #ccc;
+$secondary-border-color: #bfbfbf;
+$focused-border-color: #727272;
+$error-border-color: #f28b00;
+
+$default-button-color: #f88623;
+$default-button-hover-color: #ff9b14;
+$default-button-active-color: #e58400;
+
+$secondary-button-color: #f6f6f6;
+$secondary-button-hover-color: #aeaeae;
+$secondary-button-active-color: #a1a1a1;
+
+$active-background-color: #f7f5f5;
+
+$error: #a93538;
+$bg-error: #f5dede;
+$error-border: #e9b4b4;
+
+/* Color variables */
+$bg-content: #f1f1f1;
+$white: #fff;
+
+$grey-1: #e9e9e9;
+$grey-2: #ccc;
+$grey-3: #53534a;
+$grey-4: #333;
+
+$orange-1: #f88623;
+$orange-2: #e98c1c;
+$orange-3: #fab34a;
+
+// fonts
+$font-base: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+// Fonts
+$font-size: 1em;
+$line-height: normal;
+$default-font: $font-base;
+$letter-spacing: -0.01em;
+
+$font: #{$font-size}/#{$line-height} $default-font;
+
+// Borders
+$border: 1px solid $grey-1;
+
+// Images
+$checkout-sprite: "sprite.png";
+$mobile-sprite: "sprite-mobile.png";
+$sprite-icon: "sprite-icons.png";
+$sprite-icon_2x: "sprite-icons-16042015_2x.png";
+
+// URL
+$images-base: "/src/Web/assets/images";

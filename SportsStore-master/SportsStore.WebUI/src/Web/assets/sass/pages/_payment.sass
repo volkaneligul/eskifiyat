@@ -1,0 +1,261 @@
+// @author Sevil YILMAZ
+
+$card-icons: "card-icons-20150414.png"
+$card-icons-2x: "card-icons-20150414@2x.png"
+
+.payment-tabs
+  padding: .375em .3em 0
+  background-color: #ddd
+  +background-image(linear-gradient(top,  rgba(0,0,0,0) 80%,rgba(0,0,0,0.05) 100%))
+  a
+    display: block
+    padding: 10px 0
+    margin-top: 8px
+    color: #fff
+    font-size: 12px
+    font-weight: 700
+    line-height: 1
+    text-decoration: none
+    text-align: center
+    background-color: #a3a3a3
+    +background-image(linear-gradient(top,  rgba(0,0,0,0) 80%,rgba(0,0,0,0.05) 100%))
+    border-radius: 4px 4px 0 0
+    &:hover
+      background-color: $secondary-button-hover-color
+  .list-item
+    float: left
+    width: 49%
+    &:nth-child(2)
+      float: right
+    &.selected
+      a
+        padding: 13px 0
+        margin-top: 0
+        color: $default-link-color
+        font-size: 14px
+        background: #fff
+
+.tab-title
+  .text
+    font-size: 14px
+    font-size: .875rem
+
+.frm-credit-card
+  .control-label
+    font-size: 12px
+    font-size: .75rem
+  .card-input,
+  .selector.fixedWidth
+    width: 100%
+  .card-col
+    @extend %ib
+    width: 46%
+  .date-sep
+    @extend %ib
+    margin: 0 1%
+
+.cvc-info
+  margin-left: 1%
+  font-size: .6em
+
+.card-icons
+  @extend %ib
+  padding: 2px 0 0
+.credit-card-icon
+  background: url(#{$images-base}/icons/#{$card-icons}) no-repeat -999em -999em
+  @extend %ib
+  +dims(85px, 38px, 0 5px 0 0)
+
+  &.Asya
+    background-position: 0 0
+  &.Advantage
+    background-position: 0 -48px
+  &.Citi
+    background-position: 0 -96px
+  &.World
+    background-position: 0 -144px  
+  &.Bonus
+    background-position: 0 -192px
+  &.Axess
+    background-position: 0 -240px
+  &.CardFinans
+    background-position: 0 -288px
+  &.Maximum
+    background-position: 0 -336px
+  &.Halk
+    background-position: 0 -384px
+  &.ShopMiles
+    background-position: 0 -432px
+  &.TF
+    background-position: 0 -480px
+  &.Vakif
+    background-position: 0 -528px
+  &.Mastercard
+    background-position: 0 -576px
+  &.Visa
+    background-position: 0 -624px
+  &.Amex
+    background-position: 0 -682px
+
+.card-point-container,
+.card-point-icon
+  float: left
+  width: 50%
+.card-point-text
+  margin-bottom: .2em
+  color: $default-highlight-color
+  font-size: .75em
+  font-weight: 700
+  strong
+    font-size: 1em
+
+.save-for-opc-selection
+  float: left
+  margin-right: 10px
+  width: 310px
+
+.save-for-opc-description
+  float: left
+  width: 230px
+  font-size: 12px
+  color: $secondary-color
+
+.installment-list
+  .text
+    font-weight: 400
+    color: $default-color
+  .list
+    @extend %list-reset
+    border-top: $border
+  .list-item
+    padding: 15px 0
+    border-bottom: $border
+    cursor: pointer
+    &.selected
+      background-color: $active-background-color
+    &.is-campaign
+      .col-montly-amount,
+      .col-total,
+      .text
+        font-weight: 700
+
+  [class^="col-"]
+    float: left
+    padding: 0 20px
+  .col-installment,
+  .col-total
+    width: 80px
+  .col-montly-amount
+    width: 117px
+  .col-desc
+    width: 250px
+    color: $secondary-color
+
+  div.radio
+    margin-right: 13px
+
+.installments-header
+  padding: 0 0 10px 120px
+  color: $secondary-color
+  h5
+    margin: 0
+    font-weight: 400
+    color: $secondary-color
+
+.credit-card-tab-content
+  .tab-title
+    margin: 0 .5em
+  .frm-credit-card
+    margin-left: .5em
+  .card-tab-content
+    padding: 15px 0 0
+
+.content-credit-card
+  .box-section
+    padding-bottom: 0
+
+.saved-credit-cards
+  margin-bottom: .7em
+  padding-bottom: .7em
+  border-bottom: $border
+
+.saved-cards-container
+  margin: 0 .5em
+  .selector.fixedWidth
+    width: 100%
+
+.confirm-secure-profile-container
+  margin: 1em 0 0
+  padding: 1em
+  color: $secondary-color
+  font-size: 12px
+  font-size: .75rem
+  background-color: $active-background-color
+  border-radius: 3px
+  h4
+    color: $secondary-color
+  p
+    margin: .7em 0 1em
+    font-size: .9em
+  .col
+    margin-bottom: .5em
+  .phone-number
+    float: left
+    margin-right: .5em
+    color: $default-color
+    font-weight: 700
+    font-size: 1.5em
+  .btn-send-sms,
+  .btn-save-profile
+    float: left
+  .btn-save-profile
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+
+// Havale
+.money-order-banks
+  @extend %list-reset
+  margin-bottom: -.75em
+  .list-item
+    padding-bottom: .75em
+    + .list-item
+      padding-top: .75em
+      border-top: $border
+  .input-select
+    float: left
+    padding: .7em 0 0
+    margin-right: .5em
+    width: 20px
+
+  .bank-account-detail
+    display: table
+    overflow: hidden
+    font-size: .75em
+  .iban
+    font-weight: 700
+    font-size: 14px
+    font-size: .875rem
+  .bank-detail
+    color: $secondary-color
+
+.money-order-desc
+  font-size: 12px
+  font-size: .75rem
+  color: $secondary-color
+  strong
+    color: $default-color
+  ul
+    margin-bottom: 32px
+    margin-bottom: 2rem
+    padding-left: 16px
+    padding-left: 1rem
+
+.proceed-blocked-message
+  font-size: 12px
+  font-size: .75rem
+  line-height: normal
+
++hidpi(1.5)
+  .credit-card-icon
+    background-image: url(#{$images-base}/icons/#{$card-icons-2x})
+    background-size: 100% auto

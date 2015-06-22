@@ -1,0 +1,967 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"colu",
+				"column"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"dis",
+				"displayUserDetails"
+			],
+			[
+				"moda",
+				"modalContainer"
+			],
+			[
+				"re",
+				"removeClass"
+			],
+			[
+				"sh",
+				"shownItem"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"a",
+				"app"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"foc",
+				"focus"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"tab",
+				"tab-container"
+			],
+			[
+				"tab-",
+				"tab-container"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"tex",
+				"text-shadow"
+			],
+			[
+				"din",
+				"dinprobold"
+			],
+			[
+				"pt",
+				"pt_sansbold"
+			],
+			[
+				"se",
+				"selected"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"footer",
+				"footer-contact"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"in",
+				"inline"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_media.sass",
+			"settings":
+			{
+				"buffer_size": 5801,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_layout.sass",
+			"settings":
+			{
+				"buffer_size": 4418,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_header.sass",
+			"settings":
+			{
+				"buffer_size": 1895,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/_forms.sass",
+			"settings":
+			{
+				"buffer_size": 1379,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/global.sass",
+			"settings":
+			{
+				"buffer_size": 1852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/helpers/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 1431,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/_buttons.sass",
+			"settings":
+			{
+				"buffer_size": 1168,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_content.sass",
+			"settings":
+			{
+				"buffer_size": 3675,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_sidebar.sass",
+			"settings":
+			{
+				"buffer_size": 2048,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_footer.sass",
+			"settings":
+			{
+				"buffer_size": 510,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "SportsStore.WebUI/src/Web/assets/sass/_normalize.scss",
+			"settings":
+			{
+				"buffer_size": 9077,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 357.0,
+		"selected_items":
+		[
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"sas",
+				"Set Syntax: Sass"
+			],
+			[
+				"saass",
+				"Set Syntax: Sass"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/layout/_footer.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/layout/_navigation.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/_normalize.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/_icons.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/helpers/_helpers.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/helpers/_mixins.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/_buttons.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/SportsStore.WebUI/src/Web/assets/sass/layout/_header.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_media.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/Gruntfile.js",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_header.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_layout.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/global.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/package.json",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/node_modules/grunt-sass/package.json",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/node_modules/grunt-sass/tasks/sass.js",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/tasks/watch.js",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/pages/_delivery.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/checkout.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/_icons.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/_checkout-common.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/user.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/plugins/_picker.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/helpers/_helpers.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/helpers/_placeholders.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/plugins/_uniform._base.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/_print.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_sidebar.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_navigation.sass",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/sass/global.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_message_box.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_modal.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/layout/_content.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/_normalize.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/_forms.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/_icons.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/_typography.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/_buttons.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/helpers/_helpers.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/helpers/_mixins.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/helpers/_variables.scss",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/sass/helpers/_placeholders.sass",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/SportsStore-master/src/Web/assets/css/global.css",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/arama.htm",
+		"/C/Users/volkan/Desktop/veligul/mc/Gruntfile.js",
+		"/C/Users/volkan/Desktop/veligul/mc/src/Web/assets/js/pages/cart.js",
+		"/C/Users/volkan/Documents/Visual Studio 2013/Projects/EcommerceProject/EcommerceProject.Website/Content/js/custom.js",
+		"/C/Users/volkan/Desktop/veligul/mc/task-runner.bat",
+		"/C/Users/volkan/Desktop/veligul/grunt_kurulum_bat/bootstrap.bat",
+		"/C/Users/volkan/Desktop/jQuery-sessionStorage-shopping-cart-master/jQuery-sessionStorage-shopping-cart-master/js/jquery.shop.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/index.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_layout.sass",
+		"/C/Users/volkan/Desktop/single-page-app/assets/js/script.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_content.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/pages/product.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/helpers/_mixins.scss",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Global.asax.cs",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Web.config",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Views/Secure/Index.spark",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Views/Shared/_global.spark",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Views/Web.config",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Views/Home/Index.spark",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Core/Configuration/ApplicationSetting.cs",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/App_Data/ApplicationSetting.xml",
+		"/C/Users/volkan/Desktop/Projects/BookStore-master/BookStore.Web/Global.asax",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_header.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/helpers/_variables.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/helpers/_helpers.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/site-wide.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/_buttons.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_footer.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/pages/home.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/form.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/urunler.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/js/core.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/form-popup.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_modal.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/js/app.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/form-popup-not-ok.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_sidebar.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_navigation.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/layout/_message_box.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/_forms.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/js/app.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/global.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/css/global.css",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/404.htm",
+		"/C/Users/volkan/Desktop/Projects/git-fbds/git-fbds/js/Gruntfile.js",
+		"/C/Users/volkan/Desktop/index.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/detay.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/_font.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/js/plugins/jquery.themepunch.revolution.min.js",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/Cart/index.htm",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/_normalize.scss",
+		"/C/Users/volkan/Desktop/Projects/git-fbds/git-fbds/README.md",
+		"/C/Users/volkan/Desktop/Projects/git-fbds/detay.htm",
+		"/C/Users/volkan/Desktop/Projects/js-test/Gruntfile.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/public/javascripts/spec/test.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/public/javascripts/src/test.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/package.json",
+		"/C/Users/volkan/Desktop/Projects/js-test/node_modules/jasmine-node/spec/async-callback_spec.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/node_modules/jasmine-node/spec/SampleSpecs.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/node_modules/express/test.js",
+		"/C/Users/volkan/Desktop/Projects/js-test/node_modules/grunt-contrib-jasmine/Gruntfile.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/.sass-cache/fdf4b0f16feaf3410a26194b51cf81666a2095cd/product.sassc",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/css/plugins/settings.css",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/_icons.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/css/plugins/easy-responsive-tabs.css",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/global.scss",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/checkout.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/gift-box.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/_confirmation.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/opc.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/_delivery.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/cbp.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/_payment.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/cart.sass",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/pages/product.sass",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/plugins/settings.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/plugins/dynamic-captions.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/css/pages/product.css",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/plugins/extensions.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/js/vendor/jquery-1.10.2.js",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/plugins/static-captions.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/bourbon/helpers/_gradient-positions-parser.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/scss/bourbon/helpers/_render-gradients.scss",
+		"/C/Users/volkan/Desktop/Projects/fbds/fbds-html/css/pages/global.css",
+		"/C/Users/volkan/Desktop/Projects/hepsiburada.com/bpo/assets/scss/bpo.sass"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\volkan\\Documents\\Visual Studio 2013\\Projects\\SportsStore-master\\SportsStore.WebUI\\src\\Web",
+			"C:\\Users\\volkan\\Desktop\\Projects\\fbds\\fbds-html\\",
+			"C:\\Users\\volkan\\Desktop\\Projects\\fbds\\fbds-html\\js",
+			"core.js",
+			"C:\\Users\\volkan\\Desktop\\Projects\\fbds\\fbds-html\\scss\\_forms.sass",
+			"C:\\Users\\volkan\\Desktop\\Projects\\fbds\\fbds-html\\scss",
+			"",
+			"C:\\Users\\volkan\\Desktop\\Projects\\fbds\\fbds-html\\font",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"info",
+			"one",
+			"h1",
+			"sprite-icon",
+			"$sprite-icon",
+			"$checkout-sprite",
+			"form",
+			"CartItem",
+			"hasCustomizedItem",
+			"changeQuantity",
+			"continueCheckout",
+			"getCart",
+			"populatePayPalForm",
+			"paypalForm",
+			"populatePayPalForm",
+			".page",
+			"copyright",
+			".copyright",
+			"sevil",
+			"FBDSgetURLParameter",
+			"FBDSFastSearch",
+			"FBDSgetURLParameter",
+			"();\"",
+			"FBDSFastSearch",
+			"buraya",
+			"quer",
+			"init",
+			"sevi",
+			"HB",
+			";",
+			"input",
+			"#main-banner-product",
+			"/>\n",
+			">\n",
+			"<tr>\n                  <td>Vorname</td>\n                  <td><input type=\"text\" /></td>\n                </tr>",
+			"ul ul",
+			"nav ul ul",
+			"section nav ul ul",
+			"input",
+			".finder",
+			"input",
+			"finder input",
+			".box ul span",
+			"home-boxes .box ul span",
+			"ul span",
+			".box ul span",
+			"#a9aeb1",
+			"resp-tabs-container",
+			"icon-chevron-right",
+			"$default-button-color",
+			"btn",
+			"button",
+			"pt",
+			"busher",
+			".box-content",
+			".rev_slider ul li, .rev_slider > ul > li",
+			".rev_slider ul li, .rev_slider > ul > li, .rev_slider > ul > li:before",
+			"loader.gif",
+			"de",
+			"copyright",
+			"section nav",
+			"strong",
+			"h1, h2, h3, h4, h5, h6",
+			"h2",
+			"holder",
+			"p",
+			"%title",
+			"h1, h2, h3, h4, h5, h6",
+			"transp",
+			".content-holder",
+			"content-holder",
+			"pt_",
+			">\n",
+			"div",
+			"url('..font/",
+			"..font",
+			"url('$font-base/",
+			"text-",
+			"text-dec",
+			"dl",
+			"title",
+			".container",
+			"font-face",
+			"url('",
+			"background",
+			"$checkout-sprite",
+			"dropdown-toggle",
+			"../assets/",
+			"group"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"FBDS",
+			"url('../font/",
+			"../font",
+			"url('..font/",
+			"url('$font-base/",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_media.sass",
+					"settings":
+					{
+						"buffer_size": 5801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3956,
+								3956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 2453.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_layout.sass",
+					"settings":
+					{
+						"buffer_size": 4418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3381,
+								3381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2483.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_header.sass",
+					"settings":
+					{
+						"buffer_size": 1895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								387
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/_forms.sass",
+					"settings":
+					{
+						"buffer_size": 1379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1070,
+								1070
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/global.sass",
+					"settings":
+					{
+						"buffer_size": 1852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1759,
+								1759
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/helpers/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 1431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1301,
+								1313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/_buttons.sass",
+					"settings":
+					{
+						"buffer_size": 1168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_content.sass",
+					"settings":
+					{
+						"buffer_size": 3675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1393,
+								1393
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 935.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_sidebar.sass",
+					"settings":
+					{
+						"buffer_size": 2048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/layout/_footer.sass",
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								167,
+								167
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "SportsStore.WebUI/src/Web/assets/sass/_normalize.scss",
+					"settings":
+					{
+						"buffer_size": 9077,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3022,
+								3022
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2843.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hea",
+				"scss/layout/_header.sass"
+			],
+			[
+				"product",
+				"scss/pages/product.sass"
+			],
+			[
+				"pro",
+				".sass-cache/fdf4b0f16feaf3410a26194b51cf81666a2095cd/product.sassc"
+			],
+			[
+				"inde",
+				"index.htm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

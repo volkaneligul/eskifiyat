@@ -1,0 +1,143 @@
+// @author Sevil Yilmaz
+.cart-item-list
+  margin: 0
+  padding: 0
+  list-style: none
+  .selector
+    font-size: 12px
+    font-size: .75rem
+  div.selector
+    padding: .5em 1em
+  .ui-select
+    margin-top: .2em
+  .item
+    position: relative
+    margin-bottom: 1.2em
+    padding-bottom: 1.2em
+    border-bottom: $border
+    &:last-child
+      margin-bottom: 0
+      padding-bottom: 0
+      border-bottom: none
+  .item-content
+    min-height: 50px
+    margin-left: 50px
+    padding-left: 1em
+    line-height: normal
+  .product-image
+    +position(absolute, 0px null null 0px)
+    +size(50px)
+  .product-detail
+    position: relative
+    margin: 0 0 1em
+  .product-name
+    margin: 0
+    font-size: 14px
+    color: $default-color
+    a
+      color: $default-color
+      font-weight: 700
+      text-decoration: none
+      &:hover
+        color: #333
+    .merchant
+      display: block
+      color: $default-color
+      font-weight: 400
+  .campaigns-detail
+    margin: 0
+    font-size: 12px
+    font-size: .75rem
+  .icon-delete
+    +position(absolute, 50% 0px null null)
+    margin-top: -6px
+  .btn-delete
+    float: left
+  .item-quantity
+    float: right
+    select
+      padding: .5em .75em
+      font-size: .75em
+    .btn-md
+      width: 50px
+  .old-price
+    display: block
+    text-decoration: line-through
+    color: $secondary-color
+    font-size: 12px
+  .price
+    font-size: 14px
+    color: $default-highlight-color
+  .branch
+    margin: .6285em 0 0
+    padding: 0 0 0 24px
+    list-style: none
+  .node
+    position: relative
+    padding: 14px 0 0
+    background: url(#{$images-base}/bg-node-horizantal.png) repeat-y -26px 0
+    &.last
+      background: url(#{$images-base}/bg-node-last.png) no-repeat 0 0
+      .node-content
+        background: none
+  .node-content
+    position: relative
+    padding-left: 60px
+    background: url(#{$images-base}/bg-node-horizantal.png) no-repeat 0 25px
+    label
+      font-size: .75em
+      line-height: normal
+      margin: 0
+    .quantity-prices
+      padding-top: .5em
+  .promotion-image
+    +position(absolute, 10px null null 40px)
+    +size(40px)
+  .promotion-detail
+    padding-top: 10px
+    padding-left: 40px
+  .promotion-title
+    line-height: normal
+    font-size: .7em
+    .icon-gift,
+    .text
+      vertical-align: text-bottom
+    .icon-gift
+      margin-right: 3px
+  .promotion-name
+    margin: 0
+    line-height: normal
+    font-size: .65em
+  .item-quantity-text
+    padding-top: 10px
+    font-size: .75rem
+  .customized-fields
+    .control-group
+      margin-bottom: 0
+  .customized-title
+    padding: 0 .5rem 0 0
+    margin: 1.5rem 0 0
+    line-height: normal
+    font-size: .7em
+  .customized-description
+    margin-left: .2rem
+    font-size: .65rem
+
+.empty-cart
+  text-align: center
+  color: $secondary-color
+  font-size: .75rem
+  .h1
+    color: $secondary-color
+    font-weight: 400
+    font-size: 1rem
+
+.img-empty-cart
+  display: block
+  +dims(102px, 103px, 0 auto 1em, 0 10px 0 0)
+  background: url(#{$images-base}/empty-cart.png) no-repeat 0 0
+
++hidpi(1.5)
+  .img-empty-cart
+    background-image: url(#{$images-base}/empty-cart@2x.png)
+    background-size: 102px 103px

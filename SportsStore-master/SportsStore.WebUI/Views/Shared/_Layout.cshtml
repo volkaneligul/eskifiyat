@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/css/global")
+    @Styles.Render("~/bundles/style")
+    @Scripts.Render("~/bundles/jquery")
+
+</head>
+<body>
+    <div id="cart-animation">1</div>
+    <!--START DRAWER-->
+    <div id="drawer">
+        <div class="container" style="min-height: 0px; display: block;">
+            <form action="/cart" method="post"><div class="row first">
+                <div class="nine columns description">
+                    <img src="https://cdn.shopify.com/s/files/1/0037/5472/products/2667201070_2_1_1.jpg?v=1373555254" alt="Bronze sandals" />
+                    <div class="info">
+                        <h3><a href="/products/bronze-sandals?variant=335697995">Bronze sandals</a></h3>
+                        <h4>Womens</h4>
+                        <p>This area is populated by the product description. If you ever run out of things to say about what you're....</p>
+                        <p class="mobile">1 x $49.00</p>
+                    </div>
+                </div>
+                <div class="two columns price desktop">$49.00</div>
+                <div class="two columns quantity desktop"><input type="text" name="updates[]" id="updates_335697995" value="1"></div>
+                <div class="two columns total desktop">$49.00</div>
+                <div class="one column remove desktop"><a href="/cart/change?line=0&amp;quantity=0" class="removeLine" rel="335697995">Remove</a></div></div>
+                <div class="actions"><input type="submit" value="Check Out"></div>
+            </form>
+        </div>
+        @*<div class="container">
+            <div class="sixteen columns description">
+                <p class="empty">Your cart is empty.</p>
+            </div>
+        </div>*@
+    </div>
+    <!--END DRAWER-->
+    <!--START HEADER-->
+    <header>
+        <!--START CONTAINER-->
+        <div class="container upper">
+            <!--START SIDEBAR-->
+            <div class="three columns product-search-wrapper">
+                <div id="product-search">
+                    <form action="/search" method="get" class="search-form" role="search">
+                        <input type="hidden" name="type" value="product" />
+                        <input type="submit" id="search-submit" class="icon " />
+                        <input class="search" placeholder="Search" name="q" type="text" id="search-field" />
+                    </form>
+                    <br class="clear">
+                </div>
+            </div>
+            <!--END SIDEBAR-->
+            <!--START TOP NAV-->
+            <div class="seven columns offset-by-one desktop">
+                <nav>
+                    <a href="/search">Search</a>
+                    <a href="/pages/about-us">About Us</a>
+                    <a href="/account/login" id="customer_login_link">Login</a>
+                    <a href="/account/register" id="customer_register_link">Sign Up</a>
+                </nav>
+            </div>
+            <!--END TOP NAV-->
+            <!--START MINICART-->
+            <div class="five columns minicart-wrapper">
+                @{ Html.RenderAction("Summary", "Cart"); }
+            </div>
+            <!--END MINI CART-->
+        </div>
+        <!--END CONTAINER-->
+        <!--START CONTAINER-->
+        <div class="container lower">
+            <div class="sixteen columns">
+                <div class="table logo-tagline">
+                    <div class="table-cell">
+                        <h1 id="logo">
+                            <a href="/">
+                                <img src="/src/Web/assets/images/logo.png" alt="Eski Fiyat" />
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="table-cell">
+                        <div id="tagline" class="desktop">
+                            <h3>Free shipping on all orders over $75</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+    <!--START CONTAINER-->
+    <div class="container">
+        <!--START SIDEBAR-->
+        <div id="sidebar" class="three columns">
+            @{ Html.RenderAction("Menu", "Nav"); }
+        </div>
+        <!--END SIDEBAR-->
+        <!--START MAIN-->
+        <div id="main" class="twelve columns offset-by-one">
+            @RenderBody()
+        </div>
+        <!--END MAIN-->
+        <br class="clear">
+        <!--START FOOTER-->
+        <footer>
+            <section class="upper">
+                <!--START NAV-->
+                <div class="three columns ">
+                    <nav>
+                        <h2>Quick Links</h2>
+                        <a href="/search">Search</a> <br>
+                        <a href="/pages/about-us">About Us</a>
+                    </nav>
+                </div>
+                <!--END NAV-->
+                <!--START PAGE CONTENT-->
+                <div class="eight offset-by-one columns">
+                    <div id="footer-content">
+                        <h2>Theme documentation and support</h2>
+                        <div>
+                            <p>You can find the documentation for this theme <a href="http://simpletheme.myshopify.com/pages/documentation" target="_blank">right here</a>. Since this is an official Shopify theme you can always ask <a href="http://support.shopify.com" target="_blank">one of our gurus</a>. </p>
+                            <p class="adr"><span class="street-address">1 Main Street</span><br /><span class="locality">Los Angeles</span>, <span class="region">California</span>,<br /><span class="postal-code">90210</span> <span class="country-name">USA</span><br /> <span class="tel">Phone: (555) 867 5309</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--END PAGE CONTENT-->
+                <!--START MAILING LIST / OR CREDIT CARDS-->
+                <div class="three columns offset-by-one">
+                    <div id="payment-methods">
+                        <img alt="PayPal" src="/src/Web/assets/images/pp_cc_mark_74x46.jpg" />
+                    </div>
+                </div>
+                <!--END MAILING LIST / CREDIT CARDS-->
+                <br class="clear">
+            </section>
+            <section class="lower">
+                <div class="nine columns">
+                    <div class="legals">
+                        Copyright &copy; 2015, Shopify Shirts. <a href="http://www.shopify.ca" rel="nofollow" target="_blank">Ecommerce Software by Shopify</a>.
+                    </div>
+                </div>
+                <div class="six columns offset-by-one">
+                    <nav>
+                        <a href="/search" title="Search">Search</a>
+                        <a href="/pages/about-us" title="About Us">About Us</a>
+                    </nav>
+                </div>
+            </section>
+            <br class="clear">
+        </footer>
+        <!--END FOOTER-->
+    </div>
+    <!--END CONTAINER-->
+</body>
+</html>

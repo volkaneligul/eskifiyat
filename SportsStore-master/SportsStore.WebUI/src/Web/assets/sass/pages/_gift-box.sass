@@ -1,0 +1,36 @@
+// @author Sevil YILMAZ
+@import bourbon
+@import ../helpers/variables
+@import ../helpers/mixins
+@import ../helpers/helpers
+
+.gift-box-item-list,
+.unavailable-products
+  .product-list
+    @extend %list-reset
+  .list-item
+    margin: 0 0 1em
+    padding: 0 0 1em
+    border-bottom: $border
+    &:last-child
+      margin: 0
+      padding: 0
+      border-bottom: 0
+  .row-product-name
+    position: relative
+    margin: 0 0 1em
+    padding-right: 50px
+  .product-name
+    font-size: .7rem
+    font-size: 14px
+    font-weight: 700
+  .box-price
+    +position(absolute, 2px 0px null null)
+    color: $default-highlight-color
+    font-size: .65rem
+    font-size: 12px
+  .gift-note
+    width: 100%
+
+.unavailable-products
+  @extend %list-reset

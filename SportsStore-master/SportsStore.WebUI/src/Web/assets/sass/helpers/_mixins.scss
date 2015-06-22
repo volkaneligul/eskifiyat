@@ -1,0 +1,41 @@
+// @author Volkan Eligül
+
+@mixin pseudo($pos: absolute, $coor: 0){
+  content: "";
+  @include position($pos, $coor);
+}
+
+@mixin center(){
+  margin: 0 auto;
+}
+
+///
+/// Box dims
+/// @include dims(100px, 200px, 20px 0 10px 12px, 5px 3px 7px 9px)
+///
+@mixin dims($width: null, $height: null, $margin: null, $padding: null){
+  @if $width != null {
+    width: $width;
+  }
+
+  @if $height != null {
+    height: $height;
+  }
+
+  @if $margin != null {
+    margin: $margin;
+  }
+
+  @if $padding != null {
+    padding: $padding;
+  }
+}
+
+@mixin dimsq($width: null, $margin: null, $padding: null){
+  @include dims($width, $width, $margin, $padding);
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

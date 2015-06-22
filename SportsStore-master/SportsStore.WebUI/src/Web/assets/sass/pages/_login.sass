@@ -1,0 +1,98 @@
+// @author Sevil Yilmaz
+.btn-go-back
+  float: left
+  font-size: em(14)
+  color: $secondary-color
+  text-decoration: none
+  font-weight: 700
+
+.secure-text
+  float: right
+  padding-top: 1px
+  font-size: .75em
+  font-weight: 700
+  color: #c6c5c5
+
+.login-headline
+  margin: 5px 0 10px
+  font-size: 14px
+  font-size: .875rem
+  font-weight: 700
+  text-align: center
+
+.email-name-fields
+  position: relative
+  margin: 0 0 20px
+  .control-label
+    overflow: hidden
+    text-overflow: ellipsis
+    word-wrap: nowrap
+    font-size: 14px
+    font-size: .875rem
+
+.frm-login
+  .email-name-fields
+    font-size: 12px
+    font-size: .75rem
+
+.login-selections
+  .control-group
+    margin-bottom: 10px
+  .controls
+    .text
+      font-size: 14px
+      font-size: .875rem
+
+.change-user-container
+  margin: 10px 0 0 4px
+
+.login-tabs
+  @extend %hidden
+  padding-top: 5px
+  &.active
+    display: block !important
+    visibility: visible
+
+.user-form-info
+  font-size: 12px
+  font-size: .75rem
+  font-weight: 700
+  margin: 10px 0 10px 4px
+  p
+    margin: 0 0 10px
+
+.lazy-user-info
+  font-size: 12px
+  margin: 0 0 10px
+  p
+    margin: 0 0 5px
+
+// Cart merge
+.modal-merge
+  .btn-merge
+    float: right
+    width: 48%
+  .btn-dont-merge
+    float: left
+
+.auth-cart-container
+  font-size: 12px
+  .col1
+    float: left
+    padding-left: 2%
+    width: 73%
+  .col2
+    float: left
+    padding-left: 2%
+    width: 23%
+
+.auth-cart-list-header
+  margin-bottom: $gap
+  color: $secondary-color
+.auth-cart-list
+  @extend %list-reset
+  margin-bottom: $gap
+  .list-item
+    padding: 10px 0
+    border-bottom: $border
+    background-color: $active-background-color

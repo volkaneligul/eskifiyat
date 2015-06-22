@@ -1,0 +1,70 @@
+// @author Volkan Eligül
+
+/* --------------------------------------------------
+ *   CSS Usage
+ *-----------------------------------------------------
+ *    1. Be consistent in the declaration order. Follow the guides described in Mozilla Developer Network. Use them as following
+ *      a. positioning (position, display, top, left ...)
+ *      b. box model (width, height, margin, padding, border, background)
+ *      c. text styles (font, color, text-align ...)
+ *      d. CSS3 Rules
+ *    2. Keep one line for each declaration
+ *    3. Use indentation for parent/child selector rules
+ *      e.g:
+ *      #main-nav {
+ *        li {
+ *          a {
+ *  
+ *          }
+ *        }
+ *      }
+ *    4. For selecting an element, class etc., use min possible nesting
+ *      e.g:
+ *        wrong: #main-nav ul li a
+ *        correct: #main-nav a
+ *    5. Use shorthands whenever possible
+ *      e.g:
+ *        wrong: margin-top: 5px; margin-bottom: 5px;
+ *        correct: margin: 5px 0;
+ *
+ *        wrong: font-family: sans-serif; font-style: italic; font-size: 12px; line-height: 18px;
+ *        correct: font: italic 12px/18px sans-serif;
+ *    6. Use lower-case characters for color hex codes
+ *      e.g:
+ *        wrong: #AAA
+ *        corrent: #aaa
+ *
+ *        wrong: #F3a3FF
+ *        corrent: #f3a3ff
+ */
+/* --------------------------------------------------
+ *   CSS Usage
+ *-----------------------------------------------------*/
+
+@import bourbon
+@import normalize
+
+// helpers
+@import helpers/variables
+@import helpers/mixins
+@import helpers/helpers
+
+// page components
+@import typography
+@import icons
+@import buttons
+@import forms
+
+// layout & layout parts
+@import layout/layout
+@import layout/header
+@import layout/content
+@import layout/footer
+
+// checkout parts
+@import layout/navigation
+@import layout/sidebar
+@import layout/media
+
+
+

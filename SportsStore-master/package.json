@@ -1,0 +1,29 @@
+{
+  "name": "hepsiburada-checkout",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Checkout | Hepsiburada.com",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.hepsiburada.com:checkout/hepsiburada-checkout.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hepsiburada",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "~1.0.1",
+    "grunt-contrib-jasmine": "~0.7.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-jsbeautifier": "~0.2.7",
+    "grunt-template-jasmine-istanbul": "~0.3.0",
+    "node-bourbon": "~1.2.3",
+    "grunt-sass": "~0.18.1"
+  },
+  "dependencies": {
+    "js-beautify": "^1.5.1"
+  }
+}
