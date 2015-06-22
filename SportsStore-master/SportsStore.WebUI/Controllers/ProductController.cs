@@ -22,6 +22,10 @@ namespace SportsStore.WebUI.Controllers
         public ActionResult ProductDetail(int id)
         {
             var product = repository.Products.FirstOrDefault(p => p.ProductID == id);
+
+            if (product == null)
+                return RedirectToRoute("");
+
             return View(product);
         }
         public ViewResult List(string category, int page = 1)

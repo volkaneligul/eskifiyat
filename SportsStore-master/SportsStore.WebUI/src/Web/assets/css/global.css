@@ -864,6 +864,66 @@ p, .wysiwyg div {
 section#images {
   position: relative; }
 
+section#cart .actions {
+  text-align: right; }
+section#cart textarea#note {
+  width: 95%;
+  margin-bottom: 40px;
+  min-height: 60px; }
+section#cart .row {
+  margin-bottom: 20px; }
+  section#cart .row .cart.total h2 {
+    text-align: right;
+    font-size: 22px; }
+section#cart form .headers {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-weight: bold; }
+  section#cart form .headers .total span {
+    padding-left: 20px; }
+section#cart form .row {
+  border-bottom: 1px solid #e8e8e8; }
+  section#cart form .row .total {
+    font-size: 16px;
+    font-family: Times, TimesNewRoman, "Times New Roman", Baskerville, Georgia, serif;
+    font-style: italic;
+    font-weight: normal; }
+    section#cart form .row .total span {
+      padding-left: 20px; }
+  section#cart form .row .quantity {
+    text-align: center; }
+    section#cart form .row .quantity input {
+      width: 30px !important;
+      text-align: center; }
+  section#cart form .row .price {
+    font-size: 16px;
+    font-family: Times, TimesNewRoman, "Times New Roman", Baskerville, Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    padding-top: 5px; }
+  section#cart form .row .description img {
+    float: left;
+    width: 100px; }
+  section#cart form .row .description .info {
+    float: left;
+    padding: 0 0 0 40px;
+    width: 190px; }
+    section#cart form .row .description .info p {
+      margin-bottom: 20px; }
+    section#cart form .row .description .info h3 {
+      line-height: 18px;
+      margin-bottom: 0; }
+    section#cart form .row .description .info h4 {
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+      font-weight: normal;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #e8e8e8; }
+
 section#gallery a {
   display: block;
   float: left;
@@ -1306,6 +1366,8 @@ footer {
       padding-left: 48px; } }
 
 @media only screen and (min-width: 1280px) {
+  section#cart form div.row div.description div.info {
+    width: 300px !important; }
   #drawer form .description .info {
     width: 540px !important; }
     #drawer form .description .info p.mobile {
@@ -1325,6 +1387,9 @@ footer {
     width: 1280px; }
     .container .column, .container .columns {
       margin: 0 10px 0 10px; }
+      .container .column.alpha, .container .columns.alpha {
+        margin-left: 0;
+        margin-right: 10px; }
       .container .column.omega, .container .columns.omega {
         margin-left: 0;
         margin-right: 0; }

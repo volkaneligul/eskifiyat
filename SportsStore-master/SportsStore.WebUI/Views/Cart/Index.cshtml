@@ -3,46 +3,144 @@
 @{
     ViewBag.Title = "Sports Store: Your Cart";
 }
+<div id="page-content">
+    <!--START BREADCRUMB-->
+    <div id="breadcrumb" class="desktop">
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/" itemprop="url">
+                <span itemprop="title">Home</span>
+            </a>
+        </span>
+        &mdash;
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="/collections/all-products" itemprop="url"><span itemprop="title">All Products</span></a> &mdash; <a href="/products/blue-ripped-jeans" class="active">Model.Name</a>
+        </span>
+    </div>
+    <!--END BREADCRUMB-->
+    <h1>My Cart</h1>
+    <section id="cart">
 
-<h2>Your Cart</h2>
-<table width="90%" align="center">
-    <thead>
-        <tr>
-            <th align="center">Quantity</th>
-            <th align="left">Item</th>
-            <th align="right">Price</th>
-            <th align="right">Subtotal</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var line in Model.Cart.Lines)
-        {
-            <tr>
-                <td align="center">@line.Quantity</td>
-                <td align="left">@line.Product.Name</td>
-                <td align="right">@line.Product.Price.ToString("c")</td>
-                <td align="right">@((line.Quantity * line.Product.Price).ToString("c"))</td>
-                <td>
-                    @using (Html.BeginForm("RemoveFromCart", "Cart"))
-                    {
-                        @Html.HiddenFor(x => x.ReturnUrl)
-                        @Html.Hidden("ProductId", line.Product.ProductID)
-                        <input class="actionButtons" type="submit" value="Remove" />
-                    }
-                </td>
+        @using (Html.BeginForm("RemoveFromCart", "Cart")){
+        <!--<form action="/cart" method="post">-->
+            <!--START CART CONTENTS-->
+            <div class="twelve columns alpha omega">
+                <!-- START HEADERS-->
+                <div class="headers clearfix">
+                    <div class="six columns alpha description">
+                        Description
+                    </div>
+                    <div class="two columns price desktop">
+                        Price
+                    </div>
+                    <div class="one columns quantity desktop">
+                        Qty
+                    </div>
+                    <div class="two columns total desktop">
+                        <span>Total</span>
+                    </div>
+                </div>
+                <!-- END HEADERS-->
+                <!-- START ROW-->
+                @foreach (var line in Model.Cart.Lines)
+                {
+                    <div class="row">
+                        <div class="six columns alpha description">
+                            <img src="//cdn.shopify.com/s/files/1/0037/5472/products/6147041400_2_2_1_compact.jpg?v=1373477594" alt="Blue ripped jeans - Large / Blue" />
+                            <div class="info">
+                                <h3><a href="/products/blue-ripped-jeans?variant=335387650">@line.Product.Name</a></h3>
+                                <h4>@line.Product.Category</h4>
+                                <p>@line.Product.Description</p>
 
-            </tr>
+                            </div>
+                        </div>
+                        <div class="two columns price desktop">
+                            @line.Product.Price.ToString("c")
+                        </div>
+                        <div class="one columns quantity tr">
+                            <input type="text" name="updates[]" id="updates_335387650" value="@line.Quantity" /> <p class="mobile">x @line.Product.Price.ToString("c")</p>
+                        </div>
+                        <div class="two columns total desktop">
+                            <span>@((line.Quantity * line.Product.Price).ToString("c")) </span>
+                        </div>
+                        <div class="one column remove omega desktop">
+                            
+                                @Html.HiddenFor(x => x.ReturnUrl)
+                                @Html.Hidden("ProductId", line.Product.ProductID)
+                                <input class="actionButtons" type="submit" value="Remove" />
+                            
+                            @*<a href="/cart/change?line=1&quantity=0">x</a>*@
+                        </div>
+                    </div>
+                }
+
+                <!-- END ROW-->
+
+            </div>
+            <!--END CART CONTENTS-->
+            <br class="clear">
+            <!--START TOTAL-->
+            <div class="twelve columns alpha omega row">
+                <div class="six columns alpha continue-shopping"><a href="/collections/all">« Continue Shopping</a></div>
+
+                <div class="six columns omega cart total"><h2>Total @Model.Cart.ComputeTotalValue().ToString("c")</h2></div>
+            </div>
+            <!--END TOTAL-->
+            <br class="clear">
+            <!-- START ACTIONS -->
+            <div class="twelve columns alpha omega">
+                <div class="six columns alpha">
+                    <textarea id="note" name="note" placeholder="Add a note to your order..."></textarea>
+                </div>
+                <div class="six columns omega actions">
+                    @*<input type="submit" id="update" name="update" value="Update" />*@
+                    @*<input type="submit" id="checkout" name="checkout" value="Check Out" />*@
+                    <a href="@Model.ReturnUrl">Continue Shopping</a>
+                    @Html.ActionLink("Checkout now", "Checkout")
+                </div>
+            </div>
+            <!-- END ACTIONS -->
+        <!--</form>-->
         }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3" align="right">Total:</td>
-            <td align="right">@Model.Cart.ComputeTotalValue().ToString("c")</td>
-        </tr>
-    </tfoot>
-</table>
-<p align="center" class="actionButtons">
-    <a href="@Model.ReturnUrl">Continue Shopping</a>
-    @Html.ActionLink("Checkout now", "Checkout")
-</p>
+    </section>
+</div>
+    @*<h2>Your Cart</h2>
+        <table width="90%" align="center">
+            <thead>
+                <tr>
+                    <th align="center">Quantity</th>
+                    <th align="left">Item</th>
+                    <th align="right">Price</th>
+                    <th align="right">Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var line in Model.Cart.Lines)
+                {
+                    <tr>
+                        <td align="center">@line.Quantity</td>
+                        <td align="left">@line.Product.Name</td>
+                        <td align="right">@line.Product.Price.ToString("c")</td>
+                        <td align="right">@((line.Quantity * line.Product.Price).ToString("c"))</td>
+                        <td>
+                            @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                            {
+                                @Html.HiddenFor(x => x.ReturnUrl)
+                                @Html.Hidden("ProductId", line.Product.ProductID)
+                                <input class="actionButtons" type="submit" value="Remove" />
+                            }
+                        </td>
 
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="right">Total:</td>
+                    <td align="right">@Model.Cart.ComputeTotalValue().ToString("c")</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p align="center" class="actionButtons">
+            <a href="@Model.ReturnUrl">Continue Shopping</a>
+            @Html.ActionLink("Checkout now", "Checkout")
+        </p>*@
