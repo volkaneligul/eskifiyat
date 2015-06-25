@@ -1,0 +1,666 @@
+::selection
+	background: #2a9dcc
+	color: white
+
+html,body
+	margin: 0
+	width: 100%
+	height: 100%
+
+body
+	overflow-x: hidden
+	font-size: 14px
+	font-family: "Helvetica Neue", sans-serif
+	line-height: 1.3em
+	-webkit-font-smoothing: subpixel-antialiased
+	color: #727272
+	background: #fff
+
+.flexbox body, .flexbox .content, .flexbox .content .wrap, .flexbox .main
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	flex-direction: column
+	-webkit-box-flex: 1
+	-webkit-flex: 1 0 auto
+	-ms-flex: 1 0 auto
+	flex: 1 0 auto
+
+.banner
+	padding: 1.5em 0
+	background: transparent
+	background-size: cover
+	display: none
+
+.flexbox .banner
+	webkit-flex-shrink: 0
+	-ms-flex-negative: 0
+	flex-shrink: 0
+
+.wrap
+	margin: 0 auto
+	max-width: 40em
+	zoom: 1
+	&:after, &:before
+		content: ""
+		display: table
+
+a
+	text-decoration: none
+	color: #2a9dcc
+	-webkit-transition: color 0.2s ease-in-out
+	transition: color 0.2s ease-in-out
+
+.logo
+	display: block
+	vertical-align: middle
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+	margin: 0
+	line-height: 1em
+
+h1
+	font-family: "Helvetica Neue", sans-serif
+	font-size: 1.71429em
+
+h2
+	font-family: "Helvetica Neue", sans-serif
+	font-size: 1.28571em
+
+.logo__text
+	color: #323232
+
+.visually-hidden
+	border: 0
+	clip: rect(0, 0, 0, 0)
+	clip: rect(0 0 0 0)
+	width: 2px
+	height: 2px
+	margin: -2px
+	overflow: hidden
+	padding: 0
+	position: absolute
+
+.logo__image
+	display: inline-block
+	max-width: 10.71429em
+
+img
+	border: 0
+	max-width: 100%
+
+.logo__image img
+	max-height: 3.57143em
+	height: auto
+
+button, input, optgroup, select, textarea
+	color: inherit
+	font: inherit
+	margin: 0
+	padding: 0
+	-webkit-appearance: none
+	-webkit-font-smoothing: inherit
+	border: none
+	background: transparent
+	line-height: normal
+
+button
+	overflow: visible
+
+button, select
+	-moz-appearance: none
+	text-transform: none
+
+button, input[type="button"], input[type="reset"], input[type="submit"]
+	-webkit-appearance: button
+	cursor: pointer
+
+.order-summary-toggle
+	background: #f9f9f9
+	border-top: 1px solid #e5e5e5
+	border-bottom: 1px solid #e5e5e5
+	padding: 1.25em 0
+	-webkit-flex-shrink: 0
+	-ms-flex-negative: 0
+	flex-shrink: 0
+	text-align: left
+	width: 100%
+
+.order-summary-toggle__inner
+	zoom: 1
+
+.display-table .order-summary-toggle__inner
+	display: table
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	width: 100%
+
+.order-summary-toggle__inner:after, .order-summary-toggle__inner:before
+	content: ""
+	display: table
+
+.order-summary-toggle__inner:after
+	clear: both
+
+.order-summary-toggle__icon-wrapper
+	vertical-align: middle
+	padding-right: 0.75em
+	white-space: nowrap
+
+.display-table .order-summary-toggle__icon-wrapper
+	display: table-cell
+
+.order-summary-toggle__icon
+	fill: #2a9dcc
+	-webkit-transition: fill 0.2s ease-in-out
+	transition: fill 0.2s ease-in-out
+
+.order-summary-toggle__text
+	color: #2a9dcc
+	vertical-align: middle
+	-webkit-transition: color 0.2s ease-in-out
+	transition: color 0.2s ease-in-out
+	display: none
+
+.display-table .order-summary-toggle--show .order-summary-toggle__text--show, .display-table .order-summary-toggle--hide .order-summary-toggle__text--hide
+	display: table-cell
+	width: 100%
+
+.order-summary-toggle__dropdown
+	vertical-align: middle
+	-webkit-transition: fill 0.2s ease-in-out
+	transition: fill 0.2s ease-in-out
+	fill: #2a9dcc
+
+.order-summary-toggle__total-recap
+	vertical-align: middle
+	text-align: right
+	padding-left: 0.75em
+	white-space: nowrap
+
+.display-table .order-summary-toggle__total-recap
+	display: table-cell
+
+.total-recap__final-price
+	font-size: 1.28571em
+	line-height: 1em
+	color: #4c4c4c
+
+.content
+	overflow-x: hidden;
+
+.sidebar
+	position: relative
+	color: #707070
+	&:after
+		content: ""
+		display: block
+		width: 300%
+		position: absolute
+		top: 0
+		left: -100%
+		bottom: 0
+		background: #fafafa
+		z-index: -1
+		box-shadow: 0 -1px 0 #e1e1e1 inset
+
+.sidebar__header
+	margin-bottom: 2.5em
+	display: none
+
+.order-summary__section
+	border-top: 1px solid
+	padding-top: 1.5em
+	padding-bottom: 1.5em
+	border-color: #e1e1e1
+	&:first-child
+		border-top: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+	font-size: 1em
+
+table
+	width: 100%
+
+td, th
+	padding: 0
+	padding-left: 1em
+
+th
+	font-weight: 500
+
+td:first-child, th:first-child
+	padding-left: 0
+	text-align: left
+
+td:last-child, th:last-child
+	text-align: right
+
+.total-line td
+	padding-top: 0.75em	
+
+.sidebar th
+	color: #313131
+
+.product__image
+	width: 64px
+	height: 64px
+
+.product td
+	padding-top: 1em
+
+.product:first-child td
+	padding-top: 0
+
+.product__image__inner
+	position: relative
+
+.product__quantity
+	border-radius: 2em
+	font-size: 0.85714em
+	font-weight: 500
+	padding: 0.15em 0.5em
+	min-width: 0.8em
+	position: absolute
+	text-align: center
+	right: -0.75em
+	top: -0.75em
+	color: white
+	background-color: rgba(153,153,153,0.9)
+
+.product__image img
+	width: 100%
+	border-radius: 8px
+
+.order-summary__emphasis
+	font-weight: 500
+	color: #4b4b4b
+
+.product__description__name
+	display: block
+
+.order-summary__small-text
+	font-size: 0.85714em
+	color: #969696
+
+.fieldset
+	margin: -0.45em
+	zoom: 1
+	&:after, &:before
+		content: ""
+		display: table
+
+.fieldset:after
+	clear: both
+
+.field
+	width: 100%
+	float: left
+	padding: 0.45em
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+.flexbox .field__input-btn-wrapper
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+
+.field__input-wrapper
+	position: relative;
+
+.flexbox .field__input-btn-wrapper .field__input-wrapper
+	-webkit-box-flex: 1
+	-webkit-flex-grow: 1
+	-ms-flex-positive: 1
+	flex-grow: 1
+
+.floating-labels .field__label
+	font-size: 0.85714em
+	font-weight: normal
+	position: absolute
+	top: 0
+	width: 100%
+	margin-top: 0.3em
+	padding: 0 0.93333em
+	z-index: 1
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-transform: translateY(3px)
+	transform: translateY(3px)
+	pointer-events: none
+	overflow: hidden
+	white-space: nowraptext
+	-overflow: ellipsis
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	opacity: 0
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+	filter: alpha(opacity=0)
+
+.animate-floating-labels .field__label
+	-webkit-transition: all 0.2s ease-out
+	transition: all 0.2s ease-out
+
+.floating-labels .sidebar .field__label
+	color: #999999
+
+.field__input
+	border-radius: 4px
+	display: block
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	width: 100%
+	padding: 0.94em 0.8em
+
+.sidebar .field__input
+	background-color: white
+	color: #323232
+
+.animate-floating-labels .field__input
+	-webkit-transition: all 0.2s ease-out
+	transition: all 0.2s ease-out
+
+.boxshadow .sidebar .field__input
+	box-shadow: 0 0 0 1px #d4d4d4
+
+.btn
+	display: inline-block
+	border-radius: 4px
+	font-weight: 500
+	padding: 1.4em 1.7em
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	text-align: center
+	cursor: pointer
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+	position: relative
+	background: #2a9dcc
+	color: white
+
+.flexbox .field__input-btn
+	width: auto
+	margin-left: 0.9em
+	white-space: nowrap
+	padding-top: 0
+	padding-bottom: 0
+
+.js .sidebar .btn--disabled
+	cursor: default
+	background: #c8c8c8
+	box-shadow: none
+
+.payment-due-label
+	font-size: 1.14286em
+	color: #4b4b4b
+
+.total-line__price
+	padding-left: 1.5em
+	text-align: right
+	white-space: nowrap
+
+.payment-due__currency
+	font-size: 0.85714em
+	vertical-align: 0.2em
+	margin-right: 0.5em
+	color: #969696
+
+.payment-due__price
+	font-size: 1.71429em
+	font-weight: 500
+	letter-spacing: -0.04em
+	color: #4b4b4b
+	line-height: 1em
+
+.main .logo
+	display: none
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.breadcrumb__item
+	display: inline-block
+	font-size: 0.85714em
+	color: #999999
+	&:after
+		content: ""
+		display: inline-block
+		width: 6px
+		height: 11px
+		vertical-align: middle
+		margin: 0 0.5em
+		background-image: url(//cdn.shopify.com/s/assets/checkout_v2/breadcrumb-chevron-dark.svg-9bcb0a4283a53754410918d013dd9835.png)
+		background-image: url(//cdn.shopify.com/s/assets/checkout_v2/breadcrumb-chevron-dark-9bcb0a4283a53754410918d013dd9835.svg),none
+
+.breadcrumb__item--current
+	font-weight: 500
+	color: #4c4c4c
+
+.flexbox .main__content
+	-webkit-box-flex: 1
+	-webkit-flex: 1 0 auto
+	-ms-flex: 1 0 auto
+	flex: 1 0 auto
+
+.section
+	padding-bottom: 2em
+	position: relative
+
+.section__header
+	margin-bottom: 1em
+
+.section__title
+	color: #323232
+
+.section__content
+	zoom: 1
+
+.section__content:after, .section__content:before
+	content: ""
+	display: table
+
+.section__content:after
+	clear: both
+
+.main .field__input
+	background-color: white
+	color: #323232
+
+.animate-floating-labels .field__input
+	-webkit-transition: all 0.2s ease-out
+	transition: all 0.2s ease-out
+
+.boxshadow .main .field__input
+	box-shadow: 0 0 0 1px #d8d8d8
+	&:focus
+		box-shadow: 0 0 0 2px #2a9dcc
+
+.field__input:focus
+	outline: none		
+
+.main .field__label
+	color: #4c4c4c
+
+.floating-labels .main .field__label
+	color: #999999
+
+.floating-labels .field--show-floating-label .field__label
+	-webkit-transform: none
+	transform: none
+	opacity: 1
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+	filter: alpha(opacity=100)
+
+.floating-labels .field--show-floating-label .field__input
+	padding-top: 1.5em
+	padding-bottom: 0.38em
+
+.field__message--warning
+	margin: 1em 0 0.5em
+
+.hidden
+  display: none !important
+
+.section__content__text
+ 	margin-top: 0.75em
+
+.pointerevents .field__input-wrapper--select:before
+	content: ''
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	width: 50px
+	background-position: center center
+	background-repeat: no-repeat
+	pointer-events: none
+
+.pointerevents .main .field__input-wrapper--select:before
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/dropdown-arrow-down-dark.svg-92240ca85cfd3918d14ace7c68c03336.png)
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/dropdown-arrow-down-dark-92240ca85cfd3918d14ace7c68c03336.svg),none
+
+.checkbox-wrapper
+	margin-bottom: 1em	
+
+.display-table .radio-wrapper, .display-table .checkbox-wrapper
+	display: table
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	width: 100%
+
+.radio-wrapper:after, .radio-wrapper:before, .checkbox-wrapper:after, .checkbox-wrapper:before
+	content: ""
+	display: table
+
+.radio__input, .checkbox__input
+	padding-right: 0.75em
+	white-space: nowrap
+
+.display-table .radio__input, .display-table .checkbox__input
+	display: table-cell
+
+.input-checkbox, .input-radio
+	width: 18px
+	height: 18px
+	box-shadow: 0 0 0 0 #2a9dcc inset
+	-webkit-transition: all 0.2s ease-in-out
+	transition: all 0.2s ease-in-out
+	position: relative
+	cursor: pointer
+	vertical-align: -4px
+	outline: 0
+	border: 1px solid
+
+.input-checkbox
+	border-radius: 4px
+
+input[type="checkbox"], input[type="radio"]
+	box-sizing: border-box
+	padding: 0
+
+.main .input-checkbox, .main .input-radio
+	border-color: #d8d8d8
+	&:checked
+		border: none
+		box-shadow: 0 0 0 10px #2a9dcc inset
+
+.input-checkbox:after, .input-radio:after
+	content: ""
+	display: block
+	position: absolute
+	top: 50%
+	left: 50%
+	-webkit-transform: scale(0.2)
+	transform: scale(0.2)
+	-webkit-transition: all 0.2s ease-in-out 0.1s
+	transition: all 0.2s ease-in-out 0.1s
+	opacity: 0
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+	filter: alpha(opacity=0)
+
+.input-checkbox:checked:after, .input-radio:checked:after
+	-webkit-transform: scale(1)
+	transform: scale(1)
+	opacity: 1
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+	filter: alpha(opacity=100)	
+
+.input-checkbox:after
+	width: 10px
+	height: 8px
+	margin-left: -5px
+	margin-top: -4px
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/checkbox-tick.svg-fc66d2e54317632cd13e9aa2a4bcf998.png)
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/checkbox-tick-fc66d2e54317632cd13e9aa2a4bcf998.svg),none
+
+.radio__label, .checkbox__label
+	cursor: pointer
+	vertical-align: middle
+
+.display-table .radio__label, .display-table .checkbox__label
+	display: table-cell
+	width: 100%
+
+.step__footer:after, .step__footer:before
+	content: ""
+	display: table
+
+.btn__content
+	-webkit-transition: opacity 0.3s ease-in-out
+	transition: opacity 0.3s ease-in-out
+
+.icon
+	background-position: center center
+	background-repeat: no-repeat
+	display: inline-block
+
+.icon--button-spinner
+	width: 20px
+	height: 20px
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/button-spinner-light.svg-f50d079d85cb30a4e338ba2d4e6dac0e.png)
+	background-image: url(//cdn.shopify.com/s/assets/checkout_v2/button-spinner-light-f50d079d85cb30a4e338ba2d4e6dac0e.svg),none
+
+.btn__spinner
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -10px
+	margin-left: -10px
+	-webkit-transition: opacity 0.3s ease-in-out
+	transition: opacity 0.3s ease-in-out
+	opacity: 0
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+	filter: alpha(opacity=0)
+
+.step__footer__previous-link
+	display: block
+
+.previous-link__icon
+	fill: #2a9dcc
+	-webkit-transition: all 0.2s cubic-bezier(0.3, 0, 0, 1)
+	transition: all 0.2s cubic-bezier(0.3, 0, 0, 1)
+	margin-right: 0.25em
+
+.step__footer:after
+	clear: both
+
+.main__footer
+	padding: 1em 0
+	border-top: 1px solid #e5e5e5
+
+.copyright-text
+	font-size: 0.85714em
+	color: #999999	

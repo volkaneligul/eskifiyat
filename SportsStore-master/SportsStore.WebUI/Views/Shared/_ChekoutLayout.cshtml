@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html class="multi-step windows chrome desktop page--update page--no-banner page--logo-main js flexbox flexboxlegacy rgba multiplebgs boxshadow opacity cssanimations csstransitions generatedcontent svg inlinesvg display-table boxsizing placeholder mediaqueries pointerevents floating-labels">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/css/global-checkout")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+
+    <div class="banner" data-header>
+        <div class="wrap">
+
+            <a href="http://simpletheme.myshopify.com" class="logo logo--left">
+                <h1 class="logo__text visually-hidden">Shopify Shirts</h1>
+                <div class="logo__image">
+                    <img alt="Shopify Shirts" src="//cdn.shopify.com/s/files/1/0037/5472/t/5/assets/logo.png?10796887606868403134" />
+                </div>
+            </a>
+
+        </div>
+    </div>
+    @RenderBody()
+
+</body>
+</html>
