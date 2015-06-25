@@ -901,8 +901,12 @@ ul {
 
 .boxshadow .main .field__input {
   box-shadow: 0 0 0 1px #d8d8d8; }
-  .boxshadow .main .field__input:focus {
-    box-shadow: 0 0 0 2px #2a9dcc; }
+
+.boxshadow .field--error .field__input {
+  box-shadow: 0 0 0 2px #ff6d6d; }
+
+.boxshadow .field__input:focus {
+  box-shadow: 0 0 0 2px #2a9dcc; }
 
 .field__input:focus {
   outline: none; }
@@ -923,6 +927,18 @@ ul {
 .floating-labels .field--show-floating-label .field__input {
   padding-top: 1.5em;
   padding-bottom: 0.38em; }
+
+.field__message {
+  font-size: 0.85714em; }
+
+.field__message--error {
+  display: none;
+  line-height: 1.3em;
+  margin: 0.75em 0 0.25em;
+  color: #ff6d6d; }
+
+.field--error .field__message--error {
+  display: block; }
 
 .field__message--warning {
   margin: 1em 0 0.5em; }
