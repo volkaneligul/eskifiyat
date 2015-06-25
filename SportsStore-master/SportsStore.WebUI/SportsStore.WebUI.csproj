@@ -348,6 +348,10 @@
     <Content Include="src\Web\assets\sass\_normalize.scss" />
     <Content Include="src\Web\assets\sass\_typography.sass" />
     <Content Include="Views\Product\ProductDetail.cshtml" />
+    <Content Include="Views\Shared\_ChekoutLayout.cshtml" />
+    <Content Include="src\Web\assets\sass\global-checkout.sass" />
+    <Content Include="src\Web\assets\sass\layout\_layout-checkout.sass" />
+    <Content Include="src\Web\assets\sass\layout\_media-checkout.sass" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,6 +17,9 @@ namespace SportsStore.WebUI
             bundles.Add(new StyleBundle("~/css/global").Include(
                         "~/src/Web/assets/css/global.css"));
 
+            bundles.Add(new StyleBundle("~/css/global-checkout").Include(
+                        "~/src/Web/assets/css/global-checkout.css"));
+
             //bundles.Add(new StyleBundle("~/bundles/style").Include(
             //            "~/Content/style.css"));
 

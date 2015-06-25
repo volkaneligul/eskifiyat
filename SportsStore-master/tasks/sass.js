@@ -8,7 +8,8 @@ module.exports = function(grunt) {
         },
         dist: {
             files: {
-                '<%= meta.src.css %>/global.css': '<%= meta.src.sass %>/global.sass'
+                '<%= meta.src.css %>/global.css': '<%= meta.src.sass %>/global.sass',
+                '<%= meta.src.css %>/global-checkout.css': '<%= meta.src.sass %>/global-checkout.sass'
             }
         }
     });
